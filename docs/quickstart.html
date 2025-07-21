@@ -43,7 +43,7 @@
         Raspberry Pi</a>. Eine ausführliche Beschreibung findet sich im Kapitel
       <a href="install.html">Installation</a>.</p>
     <p>Nach der Installation und Start der App kann man sich mit dem Browser zu
-      AvNav verbinden. Dadurch startet die <a href="userdoc/index.html">WebApp</a>.<br>
+      AvNav verbinden. Dadurch startet die <a href="userdoc/index.html">Web App</a>.<br>
       Wenn man unsere Images nutzt, erzeugt der Raspberry ein WLAN (Name und
       Passwort können angepasst werden). Für Details, wie man sich nach der
       Installation mit dem Server verbindet, siehe die <a href="install.html#connecting">Image
@@ -51,7 +51,7 @@
       Wenn man über einen anderen Weg mit dem AvNav-Server verbunden ist, kann
       man http://avnav.local benutzen (oder die IP Adresse des Servers).<br>
       Für IOS- und Android-Geräte ist es empfehlenswert, einen <a href="https://de.wikipedia.org/wiki/Bonjour_%28Apple%29">Bonjour</a>
-      Browser zu nutzen. Dieser kann AvNav im lokalen Netz finden, so dass man
+      Browser zu nutzen. Dieser kann AvNav im lokalen Netz finden, sodass man
       ohne Adresseingabe sofort den Browser starten kann.</p>
     <ul>
       <li>IOS: <a href="https://itunes.apple.com/us/app/bonjour-search-for-http-web-in-wi-fi/id1097517829?mt=8"><img
@@ -66,7 +66,7 @@
           src="sailboat512r.png" alt="" class="inlineimage"> </a></p>
     <h2>Konfiguration</h2>
     <p>Nach der Installation oder der Nutzung eines Images wird AvNav in der
-      Regel ohne weitere Konfiguration starten. An den USB-Anschlüsse werden
+      Regel ohne weitere Konfiguration starten. An den USB-Anschlüssen werden
       serielle Schnittstellen mit ihren Baudraten automatisch ermittelt. Je nach
       gewählter Installation ist meist ein Empfänger für UDP-Daten auf Port
       34667 aktiv.</p>
@@ -119,7 +119,7 @@
       <li>$AVMDA</li>
       <li>$AVMTA</li>
     </ul>
-    <p>In Zusammenarbeit mit <a href="hints/CanboatAndSignalk.html">Canboat and
+    <p>In Zusammenarbeit mit <a href="hints/CanboatAndSignalk.html">Canboat und
         SignalK</a> können auch <a href="hints/CanboatAndSignalk.html">NMEA2000-</a>
       Daten empfangen und genutzt werden. Außerdem können alle Daten für das
       eigene Schiff, die in SignalK verfügbar sind, in AvNav angezeigt werden.<br>
@@ -169,12 +169,12 @@
       verarbeiten, unter Android <a href="hints/ochartsng.html">mit der
         avocharts app (ochartsng)</a>. Der O-Charts-Shop bietet Karten für
       Open-Source-Software zu sehr günstigen Preisen an.</p>
-    <p>Mit dem <a href="hints/ochartsng.html">ochartsng</a> plugin kann AvNav
+    <p>Mit dem <a href="hints/ochartsng.html">ochartsng</a> Plugin kann AvNav
       auch freie S57 Karten anzeigen (nach Konvertierung) - z.b. -&nbsp; <a href="https://nauticalcharts.noaa.gov/charts/noaa-enc.html">NOAA</a>..</p>
     <p>Karten müssen in AvNav installiert werden, bevor sie genutzt werden
       können. Das kann auf der <a href="userdoc/downloadpage.html">Files/Download
         Seite</a>, erfolgen - Sektion charts <img src="viewerimages/icons-new/map2.svg"
-        alt="" class="inlineimage">. O-charts Karten müssen über das <a href="hints/ocharts.html">o-charts
+        alt="" class="inlineimage">. O-charts-Karten müssen über das <a href="hints/ocharts.html">o-charts
         plugin</a> / <a href="hints/ochartsng.html">ochartsng plugin</a>
       hochgeladen werden.</p>
     <p></p>
@@ -186,7 +186,7 @@
     <h2>Anzeigen</h2>
     <p>Auf der <a href="userdoc/navpage.html">Seite "Navigation"</a> werden
       dargestellt: Die aktuelle Boots-Position, der Kurs, die Route zum nächsten
-      Wegepunkt, die aktuelle Route, AIS Ziele und deren Kurse,
+      Wegepunkt, die aktuelle Route, AIS-Ziele und deren Kurse,
       Navigationskreise und definierte <a href="hints/overlays.html">Overlays</a>.</p>
     <p>Weitere Navigationsdaten können dargestellt werden auf der <a href="userdoc/navpage.html">Seite
         "Navigation"</a>, im <a href="userdoc/editroutepage.html">Routen-Editor</a>
@@ -219,17 +219,17 @@
       Alarmierung, wenn der nächste Wegepunkt erreicht wird bzw. sobald man sich
       innerhalb des "approach" genannten Umkreises befindet. Es erfolgt ein
       automatisches Weiterschalten zum nächsten Wegpunkt.</p>
-    <p>Ab Version 20220819 kann AvNav zwei verschiedene Routing Modi nutzen<a name="RoutingMode"></a>:</p>
+    <p>Ab Version 20220819 kann AvNav zwei verschiedene Routing-Modi nutzen<a name="RoutingMode"></a>:</p>
     <h3><a href="https://en.wikipedia.org/wiki/Great_circle">great circle</a></h3>
-    Hier wird eine Route so berechnet das man den kürzesten Weg zwischen Start
-    und Ziel hat. Der Nachteil daran ist, das sich der Kurs im Verlauf der Route
+    Hier wird eine Route so berechnet, dass man den kürzesten Weg zwischen Start
+    und Ziel hat. Der Nachteil daran ist, dass sich der Kurs im Verlauf der Route
     permanent ändert. Eine solche Route ist in der Kartendarstellung keine
-    Strecke sondern eine Kurve.<br>
+    Strecke, sondern eine Kurve.<br>
     In älteren Versionen hat AvNav immer great circle Routen berechnet, diese
     aber (fälschlich) als Strecken dargestellt.<br>
     Für kürzere Distanzen (&lt; 100nm) spielt das aber praktisch keine Rolle.
     <h3><a href="https://en.wikipedia.org/wiki/Rhumb_line">rhumb line</a></h3>
-    Hier wird die Route so berechnet, das ein konstanter Kurs gesteuert werden
+    Hier wird die Route so berechnet, dass ein konstanter Kurs gesteuert werden
     kann. Die Kartendarstellung ist eine Strecke.
     <p>Die Umschaltung erfolgt im Router auf der&nbsp;<img src="viewerimages/icons-new/status.svg"
         alt="" class="inlineimage"> <a href="userdoc/settingspage.html">Server/Status
@@ -242,21 +242,20 @@
       Route müssen immer zwei Bedingungen erfüllt sein:</p>
     <ol>
       <li>Das Boot muss sich im Annäherungsbereich des Wegepunktes befinden
-        (kann man in den Einstellungen der WebApp vor dem Starten einer Route
+        (kann man in den Einstellungen der Web App vor dem Starten einer Route
         definieren). Das wird ersichtlich durch einen ausgelösten
         Wegepunkt-Alarm und eine rote Darstellung im Route-Widget.</li>
       <li>Je nach eingestelltem Mode (Router auf der&nbsp;<img src="viewerimages/icons-new/status.svg"
           alt="" class="inlineimage"> <a href="userdoc/settingspage.html">Server/Status
           Seite</a>: nextWpMode) - neu ab 20220819<br>
         "late" (der default und in älteren Versionen): Die Entfernung zum
-        aktuellen Wegepunkt nimmt nicht mehr ab aber die Entfernung zum nächsten
-        Wegepunkt nimmt ab<br>
+        aktuellen Wegepunkt nimmt nicht mehr ab, aber die Entfernung zum nächsten
+        Wegepunkt wird geringer.<br>
         "90": Der Wegepunkt liegt "querab" (genauer: Das Boot hat eine Linie +/-
         90° zum originalen Wegepunktkurs überquert)<br>
-        "early": Die Weiterschaltung erfolgt eine (einstellbare) Zeit nach dem
-        Wegepunkt-Alarm ohne weitere Bedingungen</li>
+        "early": Nach einem Wegepunkt-Alarm erfolgt die Weiterschaltung zum nächsten Wegepunkt nach einer (einstellbaren) Zeit ohne weitere Bedingungen</li>
     </ol>
-    Es ist wichtig zu beachten, das die Weiterschaltung nur erfolgt, wenn beide
+    Es ist wichtig zu beachten, dass die Weiterschaltung nur erfolgt, wenn beide
     Kriterien erfüllt sind. Falls eine manuelle Weiterschaltung gewünscht ist,
     kann man jederzeit durch Klick auf die Widgets links unten die
     Wegepunkt-Buttons anzeigen und den <img src="viewerimages/icons-new/nextwp.svg"
@@ -314,14 +313,14 @@
       einen Nachtmodus <img src="viewerimages/icons-new/night.svg" alt="" class="inlineimage">
       geschaltet werden. Dann sind alle Anzeigen entsprechend angepasst.</p>
     <h2>Fernsteuerung</h2>
-    <p>AvNav kann die Anzeige Funktionen auf einem Gerät von einem anderen Gerät
+    <p>AvNav kann die Anzeigefunktionen auf einem Gerät von einem anderen Gerät
       oder vom Server aus steuern. Für Details siehe die <a href="hints/RemoteControl.html">Beschreibung</a>
       dazu.</p>
     <h2>Anpassung</h2>
     <p>AvNav kann in unterschiedlicher Weise an eigene Bedürfnisse angepasst
       werden. Da die gesamte Darstellung im Browser abläuft, kann man das
       Aussehen mit <a href="hints/usercss.html">CSS</a> anpassen.</p>
-    <p>Die Konfiguration des Servers arfolgt über die Datei <a href="hints/configfile.html">avnav_server.xml</a>.
+    <p>Die Konfiguration des Servers erfolgt über die Datei <a href="hints/configfile.html">avnav_server.xml</a>.
       Eine Änderung sollte im Normalfall jedoch nicht in der Datei direkt
       erfolgen, sondern über die Bearbeitungsmöglichkeiten auf der <a href="userdoc/statuspage.html">Server/Status-Seite</a>.</p>
     <p>Neben der bereits beschriebenen Anpassung der Layouts im <a href="hints/layouts.html">Layout-Editor</a>
